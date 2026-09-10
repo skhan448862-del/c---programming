@@ -8,8 +8,8 @@
 
     // char name[] = {'S', 'A', 'H', 'I', 'L', '\0'};
 //     char name[] = "SAHIL";// these are two types of initialising a stirng 
-//      printf("%s", name);
-//      return 0;
+    //  printf("%s", name);
+    //  return 0;
 
 // }
 
@@ -47,10 +47,12 @@
 
 
 
-# include <stdio.h>
-int countlength(char arr[]);
+// # include <stdio.h>
+// # include <string.h>
 
-int main(){
+// int countlength(char arr[]);
+
+// int main(){
 
     // char name[60];
     // printf("name : ");
@@ -90,18 +92,148 @@ int main(){
 
     //   how many charcters  in  user name and get input name by user
 
-    char name[100];
-    printf("enter your name : ");
-    fgets(name, 100, stdin);
-    printf("characters in your name is : %d", countlength(name));
-    return 0;
+//     char name[100];
+//     printf("enter your name : ");
+//     fgets(name , 100, stdin);   
+//     int lenght = strlen(name);
+//     printf("characters in your name is : %d", lenght);
+//     return 0;
+// }
+
+
+// int countlength(char arr[]){
+//     int count = 0;
+//     for(int i = 0; arr[i] != '\0'; i++){
+//         count++;
+//     }
+//     return count - 1;
+// }
+
+
+//  character numbers in name of user by using library of strings
+
+// # include <stdio.h.>
+// # include <string.h>
+
+// int main(){
+//     char name[100];
+//     printf("enter your name");
+//     fgets(name, 100, stdin);
+//     int lehgth = strlen(name);
+//     printf("character in your name is : %d", lehgth - 1);
+//     return 0;
+// }
+
+
+// # include <stdio.h>
+// # include <string.h>
+
+// int main(){
+
+//     char oldStr[] = "oldStr";
+//     char newStr[] = "newStr";
+
+//     strcpy(newStr, oldStr); //string copy syntax and command
+//     puts(newStr);
+//     return 0;
+// }
+
+
+
+
+// write a programme to connect two strings
+
+// # include <stdio.h>
+// # include <string.h>
+
+// int main(){
+
+//     char firstStr[] = "hello ";   // here size is important to connect two strings
+//     char secStr[100] = "world ";
+//     strcat(secStr, firstStr);
+//     puts(secStr);
+//     return 0;
+// }
+
+
+// first take input by user and print 
+
+// # include <stdio.h>
+// # include <string.h>
+
+// int main(){
+//     char str[200];
+//     char ch;
+//     int i = 0;
+
+//     while(ch != '\n'){
+//         scanf("%c", &ch);
+//         str[i] = ch;
+//         i++;
+//     }
+//     str[i] = '\0';
+//     puts(str);
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+//  salting concept
+
+// # include <stdio.h>
+// # include <string.h>
+
+// void salting(char password[]);
+
+// int main(){
+//     char password[100];
+//     scanf("%s", password);
+//     salting(password);
+
+// }
+
+// void salting(char password[]){
+//     char salt[] = "123";
+//     char newpassword[200];
+
+//     strcpy(newpassword, password);
+//     strcat(newpassword, salt);
+
+//     puts(newpassword);
+// }
+
+
+
+
+
+
+//  write a function named slice , which takes a string & return a sliced string from  index n to m
+
+
+# include <stdio.h>
+# include <string.h>
+
+void slice(char str[], int n , int m);
+
+int main(){
+    char str[] = "helloworld";
+    slice(str, 3, 6);
 }
 
+void slice(char str[], int n , int m){ // n & m are valid numbers
+    char newstr[100];
+    int j = 0;
+    for(int i=n; i<=m; i++, j++){
 
-int countlength(char arr[]){
-    int count = 0;
-    for(int i = 0; arr[i] != '\0'; i++){
-        count++;
+        newstr[j] = str[i];
     }
-    return count - 1;
+        newstr[j] = '\0';
+        puts(newstr);
 }
