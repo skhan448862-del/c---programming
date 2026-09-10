@@ -29,13 +29,19 @@ int main(){
     printf("odd numbers are : %d\n", odd);
     printf("even numbers are : %d\n", even);
 
-    int largest , smallest;
+    int largest , smallest, secondlargest;
 
+    secondlargest = arr[0]; 
     smallest = arr[0];
     largest = arr[0];
     for(int i = 0; i < n; i++){
       if(arr[i] > largest){
+        secondlargest = largest;
         largest = arr[i];
+        
+      } else if(secondlargest > arr[i] && arr[i] != largest){
+
+        secondlargest = arr[i];
       }
     }
 
@@ -47,7 +53,8 @@ int main(){
       }
     }
 
-    printf("smallest number is : %d", smallest);
+    printf("smallest number is : %d\n", smallest);
+    printf("second largest number is : %d\n", secondlargest);
 
 
   return 0;
