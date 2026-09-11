@@ -16,7 +16,7 @@ int main(){
   int len = strlen(name);
 
   for(int i = len; i >= len/2; i--){
-    printf("%c", name[i]);
+    printf("%c", name[i]);~
   }
     return 0;
 
