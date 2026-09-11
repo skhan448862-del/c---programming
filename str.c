@@ -18,7 +18,7 @@ int main(){
 
   int len = strlen(name);
 
-  for(int i = len; i >= len/2; i--){
+  for(int i = len; i >= len; i--){
     printf("%c", name[i]);
   }
 
@@ -50,7 +50,7 @@ void countVow(char str[]){
   for(int i = 0; str[i] != '\0'; i++){
     if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
       vowles++;
-    }else{
+    }else {
       consonants++;
     }
   }
