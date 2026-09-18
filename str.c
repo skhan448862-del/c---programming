@@ -7,14 +7,14 @@ void inputStr(char str[]);
 int main(){
 
     char name[200];
-    char fullName[200];
-    int count = 0;
+    // char fullName[200];
+   int count = 0;
     
   inputStr(name);
   printf("your name is : %s\n", name);
 
-  strcpy(fullName, name);
-  printf("you name is : %s\n", fullName); // copy string logic
+  // strcpy(fullName, name);
+  // printf("you name is : %s\n", fullName); // copy string logic
 
   int len = strlen(name);
 

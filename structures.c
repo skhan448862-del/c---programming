@@ -50,5 +50,5 @@ int main(){
     printf("roll number : %d\n", s3.roll);
     printf("cgpa of student is : %f\n", s3.cgpa);
 
-    return 0;
+   return 0;
 }

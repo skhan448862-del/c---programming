@@ -135,8 +135,11 @@
 int  fib(int n);
 
 int main(){
+   int  n;
+   printf("enter number whose count fib : ");
+   scanf("%d", &n);
    
-   printf("fib of %d is : %d", fib(6));
+   printf("fib of %d is : %d", fib(n));
    return 0;
 }
 
