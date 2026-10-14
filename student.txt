@@ -1,0 +1,7 @@
+name = sahil
+roll number = 23
+ marks in subject 1 = 23
+marks in subject 2 = 32
+marks in subject 3 = 2
+total marks = 57
+ percentage = 19.00
