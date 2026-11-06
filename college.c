@@ -1,26 +1,19 @@
-#include <stdio.h>
-// write a function to calculate sum , product ad avg of two numbers;
+# include <stdio.h>
 
-
-
-void doWork(int a, int b, int *sum , int *prod, int *avg);
 int main(){
+    int i , j , n;
 
-    int a = 10, b = 20;
-    int sum , prod, avg;
-    doWork(a , b, &sum, &prod , &avg);
-
-    printf("sum = %d, prod = %d and avg = %d", sum, prod, avg);
+    printf("enter number of rows : ");
+    scanf("%d", &n);
     
+    for(i = 1; i <= n; i++){
+
+        for(j = 1; j <= i; j++){
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
     return 0;
 }
-
-void doWork(int a, int b, int *sum , int *prod, int *avg){
-
-      *sum = a + b;
-      *prod = a * b;
-      *avg = (a + b)/2;
-}
-
-
-

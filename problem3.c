@@ -1,11 +1,14 @@
-#include<stdio.h>
-#include<math.h>
+# include <stdio.h>
+
 int main(){
-// printf("%d", 14%10);
+    int n;
+    int sum = 0;
+    printf("enter number 1 to n for sum : ");
+    scanf("%d", &n);
 
- int a = 4 , b = 5;
-    int d = a + b;
-
-    printf("%d", d);
+    for(int i = 0; i <= n; i++){
+        sum+=i;
+    }
+    printf("sum of 1 to %d natural number = %d\n", n, sum);
     return 0;
 }

@@ -1,0 +1,21 @@
+patient name = z
+patient ID = 100
+patient age = 89
+treatment fees = 1000.00
+medicine fees = 700.00
+total fees = 1700.00
+
+patient name = x
+patient ID = 101
+patient age = 90
+treatment fees = 700.00
+medicine fees = 1000.00
+total fees = 1700.00
+
+patient name = c
+patient ID = 102
+patient age = 70
+treatment fees = 3000.00
+medicine fees = 799.00
+total fees = 3799.00
+

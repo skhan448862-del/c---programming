@@ -26,6 +26,10 @@ int main(){
     FILE *obc;
     obc = fopen("college.txt", "w");
 
+    if(obc == NULL){
+        printf("file not found");
+    }
+
     for(int i = 0; i < 5; i++){
         fprintf( obc , "name of  student = %s\n" , s[i].name);
         fprintf(obc, "roll number = %d\n", s[i].roll);
@@ -33,7 +37,7 @@ int main(){
             fprintf(obc, "marks in %d subject = %d\n", j + 1, s[i].marks[j]);
         }
 
-        fprintf("\n");
+        fprintf(obc, "\n");
     } 
 
     fclose(obc);  
